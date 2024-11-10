@@ -1,0 +1,45 @@
+@media (max-width:600px)
+{
+    .top-nav{
+        display: flex !important;
+    }
+    header{
+        display: none;
+    }
+    .line{
+        flex-direction: column-reverse;
+        border: 5px solid transparent;
+        border-image: linear-gradient(to top, #ffffff, rgb(0, 0, 0)) 1;
+    }
+    .line ~.line{
+        flex-direction: column;
+    }
+    footer{
+        flex-direction: column;
+    }
+    .icons{
+        width: 100vw;
+        margin-bottom: 10px;
+    }
+    .logo{
+        background: url(../img/BoH\ logo.png);
+        background-size: cover;
+        border-radius: 10px;
+        height: 45px;
+        width: auto;
+        aspect-ratio: 2/1;
+        flex-grow: 0;
+    }
+    .text1,.text2{
+        margin-top: 10px;
+    }
+    .head{
+        letter-spacing: 1rem;
+    }
+    .footer-nav-item{
+        font-size: calc(00.5em + 1vw);
+    }
+    .footer-nav{
+        margin: 0;
+    }
+}

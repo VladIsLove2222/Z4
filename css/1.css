@@ -1,0 +1,126 @@
+body{
+    background: black;
+}
+@font-face {
+    font-family: elf;
+    src: url(../font/Scumbria\ Regular.otf);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+}
+.logo{
+    background: url(../img/BoH\ logo.png);
+    background-size: cover;
+    border-radius: 10px;
+    height: auto;
+    width: 10%;
+    aspect-ratio: 2/1;
+    cursor: pointer;
+}
+.logo:hover{
+    box-shadow: inset 2px 2px 5px rgba(56, 56, 56, 0.5), 1px 1px 5px rgb(130, 130, 130);
+}
+.nav{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    font-size: calc(0.5em + 1vw);
+    color: aliceblue;
+    flex-grow: 1;
+}
+.nav-item{
+    box-sizing: border-box;
+    padding: 10px;
+    cursor: pointer;
+    font-family: elf;
+    margin-left: 5%;
+}
+.nav-item:hover{
+    text-shadow: #FC0 1px 0 10px;
+}
+.bg-line{
+    background: url(../img/kandinsky-download-1730892977020.png);
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3/1;
+    margin: 25px 0;
+    font-family: elf;
+    display: flex;
+}
+.head{
+    font-size: calc(1.0rem + 4vw);
+    letter-spacing: 2rem;
+    color: rgb(167, 255, 201);
+    text-shadow: 5px 5px 3px #000000;
+    text-align: center;
+    margin: auto;
+}
+.line{
+display: flex;
+margin: 25px auto;
+width: 80vw;
+}
+.img1{
+    object-fit: scale-down;
+    flex: 1 1 50%;
+}
+.text1{
+    color: white;
+    font-size: calc(0.3em + 1vw);
+    margin: 0 10px 10px 20px;
+    flex: 1 1 50%;
+    font-family: elf;
+}
+.img2{
+    object-fit: scale-down;
+    flex: 1 1 50%;
+}
+.text2{
+    color: white;
+    font-size: calc(0.3em + 1vw);
+    margin: 0 10px 10px 20px;
+    flex: 1 1 50%;
+    font-family: elf;
+}
+.img2 img, .img1 img{
+    width: 100%;
+    height: auto;
+}
+footer{
+    color: rgb(255, 255, 255);
+    display: flex;
+    width: 100%;
+    background-color:rgb(15, 15, 15) ;
+}
+.footer-nav{
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    margin: auto;
+}
+.footer-nav-item{
+    font-size: calc(0.2em + 1vw);
+    cursor: pointer;
+    font-family: elf;
+}
+.footer-nav-item:hover{
+    text-shadow: #FC0 1px 0 10px;
+}
+.icons{
+    display: flex;
+    width: 30vw;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+}
+.icon-item:hover{
+    text-shadow: #FC0 1px 0 10px;
+}

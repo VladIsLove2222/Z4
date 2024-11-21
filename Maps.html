@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <link rel="stylesheet" href="css/1.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/hamburger.css">
+    <link rel="stylesheet" href="css/media.css">
+    <script src="scripts/window.js"></script>
+    <title>Maps</title> 
+</head>
+<body>
+    <div class="container">
+            <header>
+                    <div class="logo"></div>
+                    <div class="nav">
+                        <div class="nav-item"><a class="link" href="characters.html">Characters</a></div>
+                        <div class="nav-item"><a class="link" href="npc.html">NPC</a></div>
+                        <div class="nav-item"><a class="link" href="Miniatures.html">Miniatures</a></div>
+                        <div class="nav-item"><a class="link" href="Maps.html">Maps</a></div>
+                        <div class="nav-item"><a class="link" href="Players.html">Players</a></div>
+                    </div>
+            </header>
+                <div>
+                    <h1 class="head1">Maps</h1> 
+                </div>
+                <div class="map">
+                <div class="rowm">
+                <div class="map1"><img src="img/секта северозапад.jpg" title="Северо-Запад"  onclick="openModal(this)" style="border-top-left-radius: 100px;"></div>
+                <div class="map1"><img src="img/секта север.jpg" title="Север" onclick="openModal(this)"></div>
+                <div class="map1"><img src="img/секта северовосток.jpg" title="Северо-Восток" onclick="openModal(this)" style="border-top-right-radius: 100px;"></div>
+                </div>
+                <div class="rowm">
+                <div class="map1"><img src="img/секта запад.jpg" title="Запад" onclick="openModal(this)"></div>
+                <div class="map1"><img src="img/секта центр.jpg" title="Центр" onclick="openModal(this)"></div>
+                <div class="map1"><img src="img/секта восток.jpg" title="Восток" onclick="openModal(this)"></div>
+                </div>
+                <div class="rowm">
+                <div class="map1"><img src="img/секта югозапад.jpg" title="Юго-Запад" onclick="openModal(this)" style="border-bottom-left-radius: 100px;"></div>
+                <div class="map1"><img src="img/секта юг.jpg" title="Юг" onclick="openModal(this)"></div>
+                <div class="map1"><img src="img/секта юговосток.jpg" title="Юго-Восток" onclick="openModal(this)" style="border-bottom-right-radius: 100px;"></div>
+                </div>
+                </div>
+                <div id="imageModal" class="modal">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <img class="modal-content" id="modalImage">
+                    <div id="caption"></div>
+                  </div>
+             <footer>
+              
+                <nav class="footer-nav">
+                    <div class="col">
+                        <div class="footer-nav-item">Author</div>
+                    </div>
+                    <div class="col">
+                        <div class="footer-nav-item">Help</div>
+                    </div>
+                    <div class="col">
+                        <div class="footer-nav-item">TTG</div>
+                    </div>
+                </nav>
+             </footer>   
+
+    </div>
+
+    <section class="top-nav">
+        <div class="logo">
+        </div>
+        <input id="menu-toggle" type="checkbox" />
+        <label class='menu-button-container' for="menu-toggle">
+        <div class='menu-button'></div>
+      </label>
+        <ul class="menu">
+            <li><a class="link" href="characters.html">Characters</a></li>
+            <li><a class="link" href="npc.html">NPC</a></li>
+            <li><a class="link" href="Miniatures.html">Miniatures</a></li>
+            <li><a class="link" href="Maps.html">Maps</a></li>
+            <li><a class="link" href="Players.html">Players</a></li>
+        </ul>
+      </section>
+</body>
+</html>

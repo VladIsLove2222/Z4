@@ -8,31 +8,31 @@ document.addEventListener('DOMContentLoaded', () => {
     // Данные для ссылок
     const popupData = {
       1: [
-        { href: 'miniatures.html', src: 'img/crew.jpg', alt: 'Link 1' },
+        { href: 'Miniatures.html', src: 'img/crew.jpg', alt: 'Link 1' },
         { href: 'npc.html', src: 'img/sam.jpg', alt: 'Link 2' },
       ],
       2: [
-        { href: 'miniatures.html', src: 'img/wili_mini.jpg', alt: 'Link 3' },
+        { href: 'Miniatures.html', src: 'img/wili_mini.jpg', alt: 'Link 3' },
         { href: 'characters.html', src: 'img/wilgelm.jpg', alt: 'Link 4' },
       ],
       3: [
-        { href: 'miniatures.html', src: 'img/gektor_mini.jpg', alt: 'Link 5' },
+        { href: 'Miniatures.html', src: 'img/gektor_mini.jpg', alt: 'Link 5' },
         { href: 'characters.html', src: 'img/gektor.jpg', alt: 'Link 6' },
       ],
       4: [
-        { href: 'miniatures.html', src: 'img/betrin_mini.jpg', alt: 'Link 7' },
+        { href: 'Miniatures.html', src: 'img/betrin_mini.jpg', alt: 'Link 7' },
         { href: 'characters.html', src: 'img/betrin.jpg', alt: 'Link 8' },
       ],
       5: [
-        { href: 'miniatures.html', src: 'img/ourten_mini.jpg', alt: 'Link 9' },
+        { href: 'Miniatures.html', src: 'img/ourten_mini.jpg', alt: 'Link 9' },
         { href: 'characters.html', src: 'img/ourten.jpg', alt: 'Link 10' },
       ],
       6: [
-        { href: 'miniatures.html', src: 'img/ash_mini.jpg', alt: 'Link 11' },
+        { href: 'Miniatures.html', src: 'img/ash_mini.jpg', alt: 'Link 11' },
         { href: 'characters.html', src: 'img/ash.jpg', alt: 'Link 12' },
       ],
       7: [
-        { href: 'miniatures.html', src: 'img/kaira_mini.jpg', alt: 'Link 13' },
+        { href: 'Miniatures.html', src: 'img/kaira_mini.jpg', alt: 'Link 13' },
         { href: 'characters.html', src: 'img/kaira.jpg', alt: 'Link 14' },
       ],
     };

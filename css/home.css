@@ -513,3 +513,38 @@
     .world-teaser { padding: 60px 4%; }
     .quick-links { padding: 60px 4%; }
 }
+
+/* ===== MOBILE ADAPTATION ===== */
+@media (max-width: 768px) {
+
+    /* Hero */
+    .hero { height: 100svh; }
+    .hero-title { font-size: clamp(3rem, 15vw, 5rem); }
+    .hero-desc { font-size: 0.85rem; }
+    .hero-btn { padding: 12px 28px; font-size: 0.85rem; }
+
+    /* Campaigns */
+    .campaigns { padding: 70px 4% 50px; }
+    .campaigns-grid { grid-template-columns: 1fr; gap: 20px; }
+    .campaign-card-inner { padding: 24px; }
+    .campaign-actions { flex-direction: column; gap: 12px; align-items: flex-start; }
+
+    /* Quick links */
+    .quick-links {
+        grid-template-columns: 1fr;
+        padding: 50px 4%;
+        gap: 14px;
+        max-width: 100%;
+    }
+    .ql-card { flex-direction: row; text-align: left; gap: 16px; padding: 20px; }
+    .ql-icon { font-size: 1.4rem; margin: 0; flex-shrink: 0; }
+    .ql-card h3 { margin: 0 0 4px; font-size: 0.95rem; }
+    .ql-card p { margin: 0; font-size: 0.78rem; }
+
+    /* Footer */
+    .footer-links { gap: 16px; }
+    .footer-links a { font-size: 0.78rem; }
+
+    /* World teaser */
+    .world-teaser-content { grid-template-columns: 1fr; gap: 30px; }
+}

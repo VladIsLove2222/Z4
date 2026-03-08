@@ -219,3 +219,18 @@
     border: 1px solid rgba(255,255,255,0.07);
 }
 .map-single:hover { filter: brightness(1.1); }
+
+@media (max-width: 768px) {
+    .subpage { padding-top: 55px; }
+    .subpage-hero { padding: 36px 4% 28px; margin-bottom: 36px; }
+    .subpage-title { font-size: clamp(2rem, 10vw, 3rem); }
+    .npc-grid { grid-template-columns: repeat(3, 1fr); gap: 16px; padding: 0 4% 60px; }
+    .maps-section { padding: 0 2% 40px; }
+    .maps-section-title { font-size: 1rem; padding: 0 2%; flex-wrap: wrap; gap: 8px; }
+    .rowm { flex-direction: column; }
+    .map1 img { border-radius: 0 !important; }
+    .maps-wrap--single { padding: 0 2%; }
+}
+@media (max-width: 480px) {
+    .npc-grid { grid-template-columns: repeat(2, 1fr); }
+}

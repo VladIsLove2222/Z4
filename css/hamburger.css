@@ -137,3 +137,28 @@
     }
   }
   
+/* Mobile logo in top-nav */
+.mob-logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    z-index: 10;
+}
+.mob-logo-img {
+    height: 32px;
+    width: auto;
+    display: block;
+}
+
+/* Fix top-nav to always show on mobile */
+@media (max-width: 768px) {
+    .top-nav {
+        display: flex !important;
+        position: fixed;
+        z-index: 100;
+        background: rgba(0,0,0,0.92);
+        backdrop-filter: blur(8px);
+        border-bottom: 1px solid rgba(255,255,255,0.07);
+    }
+    .main-header { display: none !important; }
+}

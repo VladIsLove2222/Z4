@@ -153,3 +153,14 @@
     .rowp { gap: 12px; }
     .gallery-item { width: 45%; }
 }
+
+@media (max-width: 768px) {
+    .players-page { padding-top: 55px; }
+    .players-hero { padding: 40px 4% 28px; }
+    .players-title { font-size: clamp(2rem, 10vw, 3rem); }
+    .galleryp { padding: 0 4% 60px; gap: 14px; }
+    .rowp { gap: 12px; }
+    .gallery-item { border-radius: 8px; }
+    .rowp--single { max-width: 240px; }
+    .popup-contentp { width: 92%; }
+}

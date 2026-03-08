@@ -313,3 +313,19 @@
     border-bottom-color: rgba(255,200,80,0.7) !important;
     background: none !important;
 }
+
+@media (max-width: 768px) {
+    .lore-page { padding-top: 55px; }
+    .lore-hero { height: 35vh; min-height: 220px; padding-bottom: 36px; }
+    .lore-hero-title { font-size: clamp(2rem, 10vw, 3.5rem); }
+    .lore-tabs { top: 55px; padding: 0 4%; overflow-x: auto; white-space: nowrap; }
+    .lore-tabs .lore-tab { margin-right: 24px !important; font-size: 0.8rem !important; }
+    .lore-container { padding: 40px 4% 70px; }
+    .races-grid { grid-template-columns: 1fr 1fr; }
+    .timeline::before { left: 52px; }
+    .timeline-item { grid-template-columns: 66px 1fr; gap: 14px; }
+    .timeline-item::before { left: 48px; }
+    .timeline-year { font-size: 0.68rem; }
+    .lore-facts { flex-direction: column; gap: 10px; }
+    .lore-intro p { font-size: 0.95rem; }
+}

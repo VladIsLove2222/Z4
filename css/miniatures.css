@@ -1,0 +1,206 @@
+/* ===== MINIATURES PAGE ===== */
+
+.minis-page {
+    padding-top: 70px;
+    background: #0a0a0a;
+    min-height: 100vh;
+}
+
+.minis-hero {
+    padding: 60px 5% 40px;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.minis-title {
+    font-family: elf-bold;
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    color: #fff;
+    margin: 0 0 8px;
+    letter-spacing: 0.05em;
+}
+
+.minis-sub {
+    font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+    font-size: 0.95rem;
+    color: rgba(255,255,255,0.35);
+    margin: 0;
+    letter-spacing: 0.05em;
+}
+
+.minis-section {
+    padding: 50px 5% 60px;
+}
+
+.minis-section--fatum {
+    border-top: 1px solid rgba(160,100,220,0.12);
+    background: linear-gradient(180deg, #0a0a0a 0%, #0d0a12 100%);
+}
+
+.minis-campaign-title {
+    font-family: elf;
+    font-size: 1.3rem;
+    color: rgba(255,255,255,0.7);
+    letter-spacing: 0.2em;
+    margin: 0 0 32px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.minis-campaign-num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border: 1px solid rgba(255,200,80,0.4);
+    border-radius: 50%;
+    font-size: 0.8rem;
+    color: rgba(255,200,80,0.7);
+}
+
+.minis-soon {
+    font-size: 0.65rem;
+    letter-spacing: 0.2em;
+    color: rgba(160,100,220,0.7);
+    border: 1px solid rgba(160,100,220,0.3);
+    padding: 3px 10px;
+    border-radius: 2px;
+    margin-left: 6px;
+}
+
+/* Product cards */
+.containerm {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.product {
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,0.07);
+    background: #111;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s;
+    overflow: hidden;
+}
+.product:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 40px rgba(0,0,0,0.5);
+    border-color: rgba(255,200,80,0.25);
+}
+
+.product img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    display: block;
+    border-radius: 0;
+    transition: transform 0.4s ease;
+}
+.product:hover img {
+    transform: scale(1.04);
+}
+
+.product h3 {
+    font-family: elf;
+    font-size: 0.9rem;
+    color: #fff;
+    margin: 14px 14px 4px;
+    letter-spacing: 0.04em;
+}
+.product p {
+    font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+    font-size: 0.75rem;
+    color: rgba(255,255,255,0.35);
+    margin: 0 14px 14px;
+    padding: 0;
+}
+
+/* Modal */
+.modal1 {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.82);
+    justify-content: center;
+    align-items: center;
+    z-index: 200;
+    backdrop-filter: blur(4px);
+}
+.modal-content1 {
+    background: #161616;
+    border: 1px solid rgba(255,200,80,0.15);
+    border-radius: 12px;
+    padding: 32px;
+    width: 90%;
+    max-width: 480px;
+    position: relative;
+    text-align: center;
+}
+.modal-content1 img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+.modal-content1 h2 {
+    font-family: elf;
+    font-size: 1.2rem;
+    color: #fff;
+    margin: 0 0 8px;
+    letter-spacing: 0.06em;
+}
+.modal-content1 p {
+    font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+    font-size: 0.85rem;
+    color: rgba(255,255,255,0.5);
+    margin: 0;
+}
+.close-button {
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    font-size: 26px;
+    cursor: pointer;
+    color: rgba(255,255,255,0.4);
+    background: none;
+    border: none;
+    padding: 0;
+    transition: color 0.2s;
+    width: auto;
+    height: auto;
+}
+.close-button:hover { color: #fff; }
+
+/* Placeholder */
+.minis-placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding: 60px 20px;
+    border: 1px dashed rgba(160,100,220,0.2);
+    border-radius: 12px;
+    color: rgba(255,255,255,0.2);
+}
+.minis-placeholder i {
+    font-size: 3rem;
+    color: rgba(160,100,220,0.25);
+}
+.minis-placeholder p {
+    font-family: elf;
+    font-size: 0.9rem;
+    letter-spacing: 0.1em;
+    margin: 0;
+}
+
+@media (max-width: 900px) {
+    .containerm { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 600px) {
+    .containerm { grid-template-columns: repeat(2, 1fr); }
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/1.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/hamburger.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/npc-maps.css">
+    <script src="scripts/window.js" defer></script>
+    <title>Карты — Secta D&D</title>
+</head>
+<body>
+
+<header class="main-header">
+    <a href="index.html" class="header-logo">
+        <img src="img/logo_secta.svg" alt="Secta D&D">
+    </a>
+    <nav class="main-nav">
+        <a class="nav-link" href="characters.html">Персонажи</a>
+        <a class="nav-link" href="Miniatures.html">Миниатюры</a>
+        <a class="nav-link" href="lore.html">История Миров</a>
+        <a class="nav-link" href="Players.html">О нас</a>
+    </nav>
+</header>
+
+<section class="top-nav">
+    <a href="index.html" class="logo-mobile"></a>
+    <input id="menu-toggle" type="checkbox" />
+    <label class="menu-button-container" for="menu-toggle"><div class="menu-button"></div></label>
+    <ul class="menu">
+        <li><a class="link" href="characters.html">Персонажи</a></li>
+        <li><a class="link" href="Miniatures.html">Миниатюры</a></li>
+        <li><a class="link" href="lore.html">История Миров</a></li>
+        <li><a class="link" href="Players.html">О нас</a></li>
+    </ul>
+</section>
+
+<div class="subpage">
+    <div class="subpage-hero">
+        <div class="subpage-back"><a href="lore.html">← История Миров</a></div>
+        <h1 class="subpage-title">Карты</h1>
+    </div>
+
+    <!-- Хроники Дарона -->
+    <div class="maps-section">
+        <h2 class="maps-section-title">
+            <span class="maps-section-num">I</span> Хроники Дарона
+            <span class="maps-section-sub">Chronicles of Daron</span>
+        </h2>
+        <div class="maps-wrap maps-wrap--single">
+            <img src="img-maps/fatummap.jpg" alt="Карта мира Хроники Дарона" class="map-single" onclick="openModal(this)" title="Хроники Дарона — карта мира">
+        </div>
+    </div>
+
+    <!-- Зеркало Миров -->
+    <div class="maps-section maps-section--boh">
+        <h2 class="maps-section-title">
+            <span class="maps-section-num">II</span> Зеркало Миров
+            <span class="maps-section-sub">Mirror of Worlds</span>
+        </h2>
+        <div class="maps-wrap">
+            <div class="map">
+                <div class="rowm">
+                    <div class="map1"><img src="img-maps/secta-north-west.jpg" title="Северо-Запад" onclick="openModal(this)" style="border-top-left-radius:12px;"></div>
+                    <div class="map1"><img src="img-maps/secta-north.jpg" title="Север" onclick="openModal(this)"></div>
+                    <div class="map1"><img src="img-maps/secta-north-east.jpg" title="Северо-Восток" onclick="openModal(this)" style="border-top-right-radius:12px;"></div>
+                </div>
+                <div class="rowm">
+                    <div class="map1"><img src="img-maps/secta-west.jpg" title="Запад" onclick="openModal(this)"></div>
+                    <div class="map1"><img src="img-maps/secta-center.jpg" title="Центр" onclick="openModal(this)"></div>
+                    <div class="map1"><img src="img-maps/secta-east.jpg" title="Восток" onclick="openModal(this)"></div>
+                </div>
+                <div class="rowm">
+                    <div class="map1"><img src="img-maps/secta-south-west.jpg" title="Юго-Запад" onclick="openModal(this)" style="border-bottom-left-radius:12px;"></div>
+                    <div class="map1"><img src="img-maps/secta-south.jpg" title="Юг" onclick="openModal(this)"></div>
+                    <div class="map1"><img src="img-maps/secta-south-east.jpg" title="Юго-Восток" onclick="openModal(this)" style="border-bottom-right-radius:12px;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="imageModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImage">
+    <div id="caption"></div>
+</div>
+
+<footer class="main-footer">
+    <div class="footer-logo"><img src="img/logo_secta.svg" alt="Secta D&D"></div>
+    <nav class="footer-links">
+        <a href="characters.html">Персонажи</a>
+        <a href="Miniatures.html">Миниатюры</a>
+        <a href="lore.html">История Миров</a>
+        <a href="Maps.html">Карты</a>
+        <a href="Players.html">О нас</a>
+    </nav>
+    <p class="footer-copy">Secta D&D — частный сайт компании</p>
+</footer>
+
+</body>
+</html>

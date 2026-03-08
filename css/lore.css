@@ -1,0 +1,315 @@
+/* ===== LORE PAGE ===== */
+
+.lore-page {
+    padding-top: 70px;
+    background: #0a0a0a;
+    min-height: 100vh;
+}
+
+.lore-hero {
+    position: relative;
+    height: 42vh;
+    min-height: 300px;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 50px;
+    background: url(../img/kandinsky-download-1730892977020.png) center/cover no-repeat;
+}
+.lore-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.92));
+}
+.lore-hero-text {
+    position: relative;
+    z-index: 2;
+    padding: 0 6%;
+}
+.lore-hero-title {
+    font-family: elf-bold;
+    font-size: clamp(3rem, 8vw, 6rem);
+    color: #fff;
+    margin: 8px 0 0;
+    letter-spacing: 0.08em;
+}
+
+/* Tabs */
+.lore-tabs {
+    display: flex;
+    border-bottom: 1px solid rgba(255,255,255,0.07);
+    padding: 0 6%;
+    background: #0a0a0a;
+    position: sticky;
+    top: 70px;
+    z-index: 50;
+}
+.lore-tab {
+    font-family: elf;
+    font-size: 0.9rem;
+    letter-spacing: 0.12em;
+    color: rgba(255,255,255,0.35);
+    background: none;
+    border: none;
+    border-bottom: 2px solid transparent;
+    padding: 18px 0;
+    margin-right: 40px;
+    cursor: pointer;
+    transition: color 0.2s, border-color 0.2s;
+    width: auto;
+    height: auto;
+    border-radius: 0;
+    display: inline-block;
+    position: static;
+    transform: none;
+    top: auto;
+    left: auto;
+    right: auto;
+}
+.lore-tab:hover { color: rgba(255,255,255,0.7); }
+.lore-tab--active {
+    color: #fff;
+    border-bottom-color: rgba(255,200,80,0.7);
+}
+
+.lore-tab-content { display: none; }
+.lore-tab-content--active { display: block; }
+
+/* Container */
+.lore-container {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 60px 5% 100px;
+}
+
+.lore-intro {
+    border-left: 2px solid rgba(255,200,80,0.35);
+    padding-left: 24px;
+    margin-bottom: 64px;
+}
+.lore-intro--dark {
+    border-left-color: rgba(180,50,50,0.5);
+}
+.lore-intro p {
+    font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+    font-size: 1.05rem;
+    line-height: 1.85;
+    color: rgba(255,255,255,0.6);
+    margin: 0;
+}
+
+.lore-section-title {
+    font-family: elf;
+    font-size: 1.3rem;
+    color: #fff;
+    letter-spacing: 0.18em;
+    margin: 0 0 24px;
+}
+.lore-section-title::after {
+    content: '';
+    display: block;
+    width: 36px;
+    height: 1px;
+    background: rgba(255,200,80,0.4);
+    margin-top: 10px;
+}
+
+.lore-block {
+    margin-bottom: 60px;
+}
+
+.lore-body {
+    font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+    font-size: 0.92rem;
+    line-height: 1.8;
+    color: rgba(255,255,255,0.55);
+    margin: 0 0 18px;
+}
+
+.lore-link {
+    color: rgba(255,200,80,0.75);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255,200,80,0.3);
+    transition: color 0.2s, border-color 0.2s;
+}
+.lore-link:hover {
+    color: #ffc850;
+    border-bottom-color: rgba(255,200,80,0.8);
+}
+
+/* Facts row */
+.lore-facts {
+    display: flex;
+    gap: 24px;
+    margin: 28px 0;
+    flex-wrap: wrap;
+}
+.lore-fact {
+    flex: 1;
+    min-width: 120px;
+    background: rgba(180,30,30,0.08);
+    border: 1px solid rgba(180,30,30,0.2);
+    border-radius: 6px;
+    padding: 20px 16px;
+    text-align: center;
+}
+.lore-fact-num {
+    display: block;
+    font-family: elf-bold;
+    font-size: 1.6rem;
+    color: rgba(220,80,80,0.85);
+    letter-spacing: 0.05em;
+}
+.lore-fact-label {
+    display: block;
+    font-family: elf;
+    font-size: 0.75rem;
+    color: rgba(255,255,255,0.35);
+    letter-spacing: 0.12em;
+    margin-top: 4px;
+}
+
+/* List */
+.lore-list {
+    font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+    font-size: 0.92rem;
+    line-height: 1.8;
+    color: rgba(255,255,255,0.55);
+    padding-left: 20px;
+    margin: 0 0 18px;
+}
+.lore-list li { margin-bottom: 4px; }
+
+/* Races grid */
+.lore-races { margin-bottom: 72px; }
+.races-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+.race-card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.07);
+    border-radius: 4px;
+    padding: 14px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    transition: border-color 0.2s, background 0.2s;
+}
+.race-card:hover {
+    background: rgba(255,200,80,0.04);
+    border-color: rgba(255,200,80,0.25);
+}
+.race-card span {
+    font-family: elf;
+    font-size: 0.9rem;
+    color: #fff;
+    letter-spacing: 0.04em;
+}
+.race-card small {
+    font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+    font-size: 0.72rem;
+    color: rgba(255,255,255,0.35);
+}
+
+/* Timeline */
+.timeline { position: relative; }
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 70px;
+    top: 48px;
+    bottom: 0;
+    width: 1px;
+    background: rgba(255,255,255,0.07);
+}
+.timeline-item {
+    display: grid;
+    grid-template-columns: 88px 1fr;
+    gap: 24px;
+    margin-bottom: 44px;
+    position: relative;
+}
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: 66px;
+    top: 5px;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: rgba(255,200,80,0.4);
+    border: 1px solid rgba(255,200,80,0.7);
+}
+.timeline-item--now::before {
+    background: rgba(100,220,120,0.5);
+    border-color: rgba(100,220,120,0.9);
+    box-shadow: 0 0 10px rgba(100,220,120,0.35);
+}
+.timeline-year {
+    font-family: elf;
+    font-size: 0.75rem;
+    color: rgba(255,200,80,0.55);
+    text-align: left;
+    padding-top: 2px;
+    letter-spacing: 0.03em;
+}
+.timeline-item--now .timeline-year { color: rgba(100,220,120,0.75); }
+.timeline-content h3 {
+    font-family: elf;
+    font-size: 0.95rem;
+    color: #fff;
+    margin: 0 0 8px;
+    letter-spacing: 0.04em;
+}
+.timeline-content p {
+    font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+    font-size: 0.87rem;
+    line-height: 1.72;
+    color: rgba(255,255,255,0.5);
+    margin: 0;
+}
+
+/* Active nav */
+.nav-link--active { color: rgba(255,200,80,0.9) !important; }
+
+@media (max-width: 600px) {
+    .races-grid { grid-template-columns: 1fr 1fr; }
+    .timeline::before { left: 54px; }
+    .timeline-item { grid-template-columns: 68px 1fr; }
+    .timeline-item::before { left: 50px; }
+    .lore-tabs { overflow-x: auto; }
+}
+
+/* Override global button styles for lore tabs */
+.lore-tabs .lore-tab {
+    position: static !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    transform: none !important;
+    width: auto !important;
+    height: auto !important;
+    border-radius: 0 !important;
+    padding: 18px 0 !important;
+    background: none !important;
+    border: none !important;
+    border-bottom: 2px solid transparent !important;
+    font-size: 0.9rem !important;
+    font-family: elf !important;
+    letter-spacing: 0.12em !important;
+    color: rgba(255,255,255,0.35) !important;
+    cursor: pointer !important;
+    margin-right: 40px !important;
+    display: inline-block !important;
+    transition: color 0.2s, border-color 0.2s !important;
+}
+.lore-tabs .lore-tab:hover {
+    color: rgba(255,255,255,0.7) !important;
+    background: none !important;
+}
+.lore-tabs .lore-tab--active {
+    color: #fff !important;
+    border-bottom-color: rgba(255,200,80,0.7) !important;
+    background: none !important;
+}

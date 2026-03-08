@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/1.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/hamburger.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/miniatures.css">
+    <script src="scripts/miniatures.js" defer></script>
+    <title>Миниатюры — Secta D&D</title>
+</head>
+<body>
+
+<header class="main-header">
+    <a href="index.html" class="header-logo">
+        <img src="img/logo_secta.svg" alt="Secta D&D">
+    </a>
+    <nav class="main-nav">
+        <a class="nav-link" href="characters.html">Персонажи</a>
+        <a class="nav-link nav-link--active" href="Miniatures.html">Миниатюры</a>
+        <a class="nav-link" href="lore.html">История Миров</a>
+        <a class="nav-link" href="Players.html">О нас</a>
+    </nav>
+</header>
+
+<section class="top-nav">
+    <a href="index.html" class="logo-mobile"></a>
+    <input id="menu-toggle" type="checkbox" />
+    <label class="menu-button-container" for="menu-toggle"><div class="menu-button"></div></label>
+    <ul class="menu">
+        <li><a class="link" href="characters.html">Персонажи</a></li>
+        <li><a class="link" href="Miniatures.html">Миниатюры</a></li>
+        <li><a class="link" href="lore.html">История Миров</a></li>
+        <li><a class="link" href="Players.html">О нас</a></li>
+    </ul>
+</section>
+
+<div class="minis-page">
+    <div class="minis-hero">
+        <h1 class="minis-title">Миниатюры</h1>
+        <p class="minis-sub">Покрашенные фигурки персонажей и зверей</p>
+    </div>
+
+    <div class="minis-section">
+        <h2 class="minis-campaign-title">
+            <span class="minis-campaign-num">I</span> Храбрые сердцем
+        </h2>
+        <div class="containerm">
+            <div class="product" data-id="1">
+                <img src="img/wili_mini.jpg" alt="Вильгельм">
+                <h3>Вильгельм Сиккиния</h3>
+                <p>Гном · Волшебник · 1/32</p>
+            </div>
+            <div class="product" data-id="2">
+                <img src="img/gektor_mini.jpg" alt="Гектор">
+                <h3>Гектор</h3>
+                <p>Ящеролюд · Следопыт · 1/32</p>
+            </div>
+            <div class="product" data-id="3">
+                <img src="img/betrin_mini.jpg" alt="Бетрин">
+                <h3>Бетрин Харви</h3>
+                <p>Эльф · Друид · 1/32</p>
+            </div>
+            <div class="product" data-id="4">
+                <img src="img/ourten_mini.jpg" alt="Уртен">
+                <h3>Уртен Дривер</h3>
+                <p>Человек · Жрец · 1/32</p>
+            </div>
+            <div class="product" data-id="5">
+                <img src="img/ash_mini.jpg" alt="Эш">
+                <h3>Эш</h3>
+                <p>Полуэльф · Колдун · 1/32</p>
+            </div>
+            <div class="product" data-id="6">
+                <img src="img/kaira_mini.jpg" alt="Каира">
+                <h3>Каира</h3>
+                <p>Тифлинг · Бард · 1/32</p>
+            </div>
+            <div class="product" data-id="7">
+                <img src="img/crew.jpg" alt="Команда">
+                <h3>Храбрые Сердцем</h3>
+                <p>Весь отряд · 1/32</p>
+            </div>
+            <div class="product" data-id="8">
+                <img src="img/taison_mini.jpg" alt="Тайсон">
+                <h3>Тайсон</h3>
+                <p>Сова-спутник Гектора · 1/32</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="minis-section minis-section--fatum">
+        <h2 class="minis-campaign-title">
+            <span class="minis-campaign-num">II</span> Фатум
+            <span class="minis-soon">Скоро</span>
+        </h2>
+        <div class="minis-placeholder">
+            <i class="fa fa-cube"></i>
+            <p>Миниатюры отряда в процессе работы</p>
+        </div>
+    </div>
+</div>
+
+<div class="modal1" id="modal">
+    <div class="modal-content1">
+        <span class="close-button" id="closeModal">&times;</span>
+        <h2 id="modalTitle"></h2>
+        <div id="modalGallery"><img src="" alt="" id="modalImage"></div>
+        <p id="modalDescription"></p>
+    </div>
+</div>
+
+<footer class="main-footer">
+    <div class="footer-logo"><img src="img/logo_secta.svg" alt="Secta D&D"></div>
+    <nav class="footer-links">
+        <a href="characters.html">Персонажи</a>
+        <a href="Miniatures.html">Миниатюры</a>
+        <a href="lore.html">История Миров</a>
+        <a href="Maps.html">Карты</a>
+        <a href="Players.html">О нас</a>
+    </nav>
+    <p class="footer-copy">Secta D&D — частный сайт компании</p>
+</footer>
+
+</body>
+</html>

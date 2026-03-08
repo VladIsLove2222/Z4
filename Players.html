@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/1.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/hamburger.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/players.css">
+    <script src="scripts/players.js" defer></script>
+    <title>О нас — Secta D&D</title>
+</head>
+<body>
+
+<header class="main-header">
+    <a href="index.html" class="header-logo">
+        <img src="img/logo_secta.svg" alt="Secta D&D">
+    </a>
+    <nav class="main-nav">
+        <a class="nav-link" href="characters.html">Персонажи</a>
+        <a class="nav-link" href="Miniatures.html">Миниатюры</a>
+        <a class="nav-link" href="lore.html">История Миров</a>
+        <a class="nav-link nav-link--active" href="Players.html">О нас</a>
+    </nav>
+</header>
+
+<section class="top-nav">
+    <a href="index.html" class="logo-mobile"></a>
+    <input id="menu-toggle" type="checkbox" />
+    <label class="menu-button-container" for="menu-toggle"><div class="menu-button"></div></label>
+    <ul class="menu">
+        <li><a class="link" href="characters.html">Персонажи</a></li>
+        <li><a class="link" href="Miniatures.html">Миниатюры</a></li>
+        <li><a class="link" href="lore.html">История Миров</a></li>
+        <li><a class="link" href="Players.html">О нас</a></li>
+    </ul>
+</section>
+
+<div class="players-page">
+    <div class="players-hero">
+        <h1 class="players-title">О нас</h1>
+        <p class="players-sub">Команда Secta D&D — барбершоп и авантюристы</p>
+    </div>
+
+    <div class="galleryp">
+        <div class="rowp rowp--single">
+            <img src="img/Andrey.jpg" alt="Андрей" class="gallery-item" data-popup="1">
+        </div>
+        <div class="rowp">
+            <img src="img/Vlad.jpg" alt="Влад" class="gallery-item" data-popup="2">
+            <img src="img/Misha.jpg" alt="Миша" class="gallery-item" data-popup="3">
+            <img src="img/ksusha.jpg" alt="Ксюша" class="gallery-item" data-popup="4">
+        </div>
+        <div class="rowp">
+            <img src="img/Vova.jpg" alt="Вова" class="gallery-item" data-popup="5">
+            <img src="img/Sasha.jpg" alt="Саша" class="gallery-item" data-popup="6">
+            <img src="img/Alyona.jpg" alt="Алёна" class="gallery-item" data-popup="7">
+        </div>
+    </div>
+
+    <div class="popupp" id="popup">
+        <div class="popup-contentp">
+            <span class="closep">&times;</span>
+            <div class="popup-image-container">
+                <img id="popup-image" src="" alt="">
+                <div class="popup-links" id="popup-links"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="main-footer">
+    <div class="footer-logo"><img src="img/logo_secta.svg" alt="Secta D&D"></div>
+    <nav class="footer-links">
+        <a href="characters.html">Персонажи</a>
+        <a href="Miniatures.html">Миниатюры</a>
+        <a href="lore.html">История Миров</a>
+        <a href="Maps.html">Карты</a>
+        <a href="Players.html">О нас</a>
+    </nav>
+    <p class="footer-copy">Secta D&D — частный сайт компании</p>
+</footer>
+
+</body>
+</html>

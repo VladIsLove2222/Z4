@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/1.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/hamburger.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/home.css">
+    <title>Secta D&D</title>
+</head>
+<body>
+
+    <header class="main-header">
+        <a href="index.html" class="header-logo">
+            <img src="img/logo_secta.svg" alt="Secta D&D">
+        </a>
+        <nav class="main-nav">
+            <a class="nav-link" href="characters.html">Персонажи</a>
+            <a class="nav-link" href="Miniatures.html">Миниатюры</a>
+            <a class="nav-link" href="lore.html">История Миров</a>
+            <a class="nav-link" href="Players.html">О нас</a>
+        </nav>
+    </header>
+
+    <section class="top-nav">
+        <a href="index.html" class="logo-mobile"></a>
+        <input id="menu-toggle" type="checkbox" />
+        <label class="menu-button-container" for="menu-toggle">
+            <div class="menu-button"></div>
+        </label>
+        <ul class="menu">
+            <li><a class="link" href="characters.html">Персонажи</a></li>
+            <li><a class="link" href="Miniatures.html">Миниатюры</a></li>
+            <li><a class="link" href="lore.html">История Миров</a></li>
+            <li><a class="link" href="Players.html">О нас</a></li>
+        </ul>
+    </section>
+
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <p class="hero-sub">Dungeons &amp; Dragons</p>
+            <h1 class="hero-title">Secta<br><span>D&amp;D</span></h1>
+            <p class="hero-desc">Два отряда. Два мира. Две судьбы.</p>
+            <a href="#campaigns" class="hero-btn smooth-scroll">Наши кампании</a>
+        </div>
+        <div class="hero-scroll"><span></span></div>
+    </section>
+
+    <section class="campaigns" id="campaigns">
+        <h2 class="section-title">Кампании</h2>
+        <div class="campaigns-grid">
+
+            <div class="campaign-card campaign-hills">
+                <div class="campaign-card-inner">
+                    <div class="campaign-badge">Завершена</div>
+                    <h3 class="campaign-name">Храбрые сердцем</h3>
+                    <p class="campaign-setting">Brave of Hearts</p>
+                    <p class="campaign-desc">
+                        Светлый мир, погружённый во тьму после роковых экспериментов с магией. Пятеро волшебников открыли зеркало миров — и что-то заглянуло в него с той стороны. Солнце теперь светит лишь несколько часов, а кровавая луна озаряет бесконечную ночь.
+                    </p>
+                    <div class="campaign-party">
+                        <span class="party-label">Отряд</span>
+                        <div class="party-tags">
+                            <span>Вильгельм</span><span>Гектор</span><span>Каира</span>
+                            <span>Эш</span><span>Бетрин</span><span>Уртен</span>
+                        </div>
+                    </div>
+                    <div class="campaign-actions">
+                        <a href="characters.html#boh" class="campaign-btn">Персонажи →</a>
+                        <a href="lore.html#tab-boh-anchor" class="campaign-btn campaign-btn--lore">История →</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="campaign-card campaign-fatum">
+                <div class="campaign-card-inner">
+                    <div class="campaign-badge campaign-badge--active">Активна</div>
+                    <h3 class="campaign-name">Фатум</h3>
+                    <p class="campaign-setting">Fatum</p>
+                    <p class="campaign-desc">
+                        Мир на 3271 году от сотворения. Боги, населившие его, давно ушли в тень — но их следы в каждом камне, каждом руднике и каждом портале между мирами. Новый отряд. Новые судьбы. Новая история.
+                    </p>
+                    <div class="campaign-party">
+                        <span class="party-label">Отряд</span>
+                        <div class="party-tags">
+                            <span>Джасти</span><span>Ширин</span><span>Виги</span>
+                            <span>Морфиус</span><span>Мира</span><span>Кассиан</span>
+                        </div>
+                    </div>
+                    <div class="campaign-actions">
+                        <a href="characters.html#fatum" class="campaign-btn">Персонажи →</a>
+                        <a href="lore.html#tab-fatum-anchor" class="campaign-btn campaign-btn--lore">История →</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="quick-links">
+        <a href="Miniatures.html" class="ql-card">
+            <div class="ql-icon"><i class="fa fa-cube"></i></div>
+            <h3>Миниатюры</h3>
+            <p>Покрашенные фигурки персонажей и монстров</p>
+        </a>
+        <a href="Maps.html" class="ql-card">
+            <div class="ql-icon"><i class="fa fa-map"></i></div>
+            <h3>Карты</h3>
+            <p>Регионы и локации наших приключений</p>
+        </a>
+        <a href="Players.html" class="ql-card">
+            <div class="ql-icon"><i class="fa fa-users"></i></div>
+            <h3>О нас</h3>
+            <p>Кто мы и во что играем</p>
+        </a>
+    </section>
+
+    <footer class="main-footer">
+        <div class="footer-logo">
+            <img src="img/logo_secta.svg" alt="Secta D&D">
+        </div>
+        <nav class="footer-links">
+            <a href="characters.html">Персонажи</a>
+            <a href="Miniatures.html">Миниатюры</a>
+            <a href="lore.html">История Миров</a>
+            <a href="Maps.html">Карты</a>
+            <a href="Players.html">О нас</a>
+        </nav>
+        <p class="footer-copy">Secta D&D — частный сайт компании</p>
+    </footer>
+
+    <script>
+        document.querySelector('.smooth-scroll').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector('#campaigns').scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+
+</body>
+</html>
